@@ -10,11 +10,10 @@ public class MainMenuScript : MonoBehaviour
     public void BotonPlay() 
 
     {
-        //SceneManager.LoadScene("EscogerCoche");
+        SceneManager.LoadScene("EscogerCoche");
     }
 
-    public void BotonSelect()
-    { }
+    
 
     public void BotonQuit()
     {

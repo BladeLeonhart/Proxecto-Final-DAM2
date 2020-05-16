@@ -20,11 +20,8 @@ public class HB_Kart : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			TakeDamage(20);
-		}
-	}
+     
+    }
 
 	void TakeDamage(int damage)
 	{
@@ -32,4 +29,40 @@ public class HB_Kart : MonoBehaviour
 
 		healthBar.SetHealth(currentHealth);
 	}
+
+
+
+    void HealthDamage()
+    {
+        currentHealth += 25; ;
+
+        healthBar.SetHealth(currentHealth);
+    }
+
+    void OnTriggerEnter(Collider colision)
+    {
+
+        if(colision.tag == "Cactus1")
+        {
+            TakeDamage(25);
+            Destroy(colision.gameObject);
+
+        }
+
+        if (colision.tag == "Corazon")
+        {
+            if (currentHealth<100)
+            {
+                HealthDamage();
+                
+            }
+
+            Destroy(colision.gameObject);
+        }
+
+
+    }
+
+
+
 }

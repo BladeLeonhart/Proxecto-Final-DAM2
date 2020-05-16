@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscogerCoche.unity
     guid: ac634e0a4ef3f4c44a11a9484c3fdbc2
+  - enabled: 1
+    path: Assets/Scenes/Desierto.unity
+    guid: 6885a3e506e654c4e82b07976ce55894
   m_configObjects: {}

@@ -16,13 +16,14 @@ public class rotacionCoche : MonoBehaviour
     public GameObject Personaje2;
     public GameObject Personaje3;
 
-
+    public static int acumulador;
 
 
     void Start()
     {
 
         currentSelection=2;
+        acumulador = currentSelection;
 
     }
 
@@ -36,6 +37,7 @@ public class rotacionCoche : MonoBehaviour
             currentAngle = transform.eulerAngles;
             targetRot = targetRot + new Vector3(0, 90, 0);
             currentSelection++;
+            acumulador = currentSelection;
 
         }
 
@@ -44,6 +46,7 @@ public class rotacionCoche : MonoBehaviour
             currentAngle = transform.eulerAngles;
             targetRot = targetRot - new Vector3(0, 90, 0);
             currentSelection--;
+            acumulador = currentSelection;
 
         }
 

@@ -7,8 +7,8 @@ public class KartController : MonoBehaviour
 
 
 
-    private float velocidad = 20;
-    private float velocidadGiro = 50;
+   public float velocidad = 20;
+    public float velocidadGiro = 100;
     private float entradaHorizontal;
     private float entradaVertical;
     // Start is called before the first frame update

@@ -83,6 +83,12 @@ public class HB_Kart : MonoBehaviour
 
             Destroy(colision.gameObject);
         }
+        if (colision.tag == "Vueltas")
+        {
+
+            Vueltas_tiempo.vueltas++;
+
+        }
 
 
     }
@@ -90,3 +96,7 @@ public class HB_Kart : MonoBehaviour
 
 
 }
+
+
+
+

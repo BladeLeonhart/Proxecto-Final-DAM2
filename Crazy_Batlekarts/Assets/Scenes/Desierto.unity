@@ -485,6 +485,11 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 277213759}
+  acum: 0
+  contador: {fileID: 909815994}
+  contadorvueltas: {fileID: 605304912}
+  tiempo: 0
+  vueltas: 0
 --- !u!114 &78680307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6591,6 +6596,11 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 277213759}
+  acum: 0
+  contador: {fileID: 909815994}
+  contadorvueltas: {fileID: 605304912}
+  tiempo: 0
+  vueltas: 0
 --- !u!1001 &1005153486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7201,6 +7211,11 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 277213759}
+  acum: 0
+  contador: {fileID: 909815994}
+  contadorvueltas: {fileID: 605304912}
+  tiempo: 0
+  vueltas: 0
 --- !u!1001 &1084313601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10941,8 +10956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d044b7cd5f1ccca42871b88d4f18ed28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contador: {fileID: 909815994}
-  contadorvueltas: {fileID: 605304912}
 --- !u!4 &1753798239
 Transform:
   m_ObjectHideFlags: 0

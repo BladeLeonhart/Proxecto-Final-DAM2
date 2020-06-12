@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HB_Kart : MonoBehaviour
 {
@@ -9,6 +10,12 @@ public class HB_Kart : MonoBehaviour
 	public int currentHealth;
    public static int vida;
 	public HealthBar healthBar;
+    public int acum;
+    public Text contador;
+    public Text contadorvueltas;
+
+    public float tiempo = 0f;
+    public int vueltas = 0;
 
     public void SavePlayer()
     {
@@ -26,6 +33,10 @@ public class HB_Kart : MonoBehaviour
 
         currentHealth = data.health;
         healthBar.SetHealth(currentHealth);
+        vueltas = data.vuelta;
+        tiempo = data.tiempos;
+
+       
         Vector3 position;
         position.x = data.position[0];
         position.y = data.position[1];
@@ -40,12 +51,19 @@ public class HB_Kart : MonoBehaviour
 		currentHealth = maxHealth;
         vida = currentHealth;
         healthBar.SetMaxHealth(maxHealth);
-	}
+        contador.text = " " + tiempo;
+        contadorvueltas.text = " " + vueltas;
 
-	// Update is called once per frame
-	void Update()
+    }
+
+    // Update is called once per frame
+    void Update()
 	{
-        
+        tiempo += Time.deltaTime;
+
+        contador.text = " " + tiempo.ToString("f0");
+        contadorvueltas.text = " " + vueltas.ToString();
+
     }
 
 	void TakeDamage(int damage)
@@ -89,7 +107,7 @@ public class HB_Kart : MonoBehaviour
         if (colision.tag == "Vueltas")
         {
 
-            Vueltas_tiempo.vueltas++;
+            vueltas++;
 
         }
 

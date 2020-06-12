@@ -39,6 +39,7 @@ public class GameOver : MonoBehaviour
 
     public void Restart()
     {
+       
         SceneManager.LoadScene("EscogerCoche");
 
 

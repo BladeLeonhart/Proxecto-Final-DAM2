@@ -8,6 +8,8 @@ TagManager:
   - Cactus1
   - Corazon
   - Vueltas
+  - Amigo
+  - Enemigo
   layers:
   - Default
   - TransparentFX

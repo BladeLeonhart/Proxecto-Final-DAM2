@@ -7,7 +7,7 @@ public class HB_Kart : MonoBehaviour
 
 	public int maxHealth = 100;
 	public int currentHealth;
-
+   public static int vida;
 	public HealthBar healthBar;
 
     public void SavePlayer()
@@ -38,20 +38,22 @@ public class HB_Kart : MonoBehaviour
 	void Start()
 	{
 		currentHealth = maxHealth;
-		healthBar.SetMaxHealth(maxHealth);
+        vida = currentHealth;
+        healthBar.SetMaxHealth(maxHealth);
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-     
+        
     }
 
 	void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
+        vida = currentHealth;
 
-		healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
 	}
 
 
@@ -59,6 +61,7 @@ public class HB_Kart : MonoBehaviour
     void HealthDamage()
     {
         currentHealth += 25; ;
+        vida = currentHealth;
 
         healthBar.SetHealth(currentHealth);
     }

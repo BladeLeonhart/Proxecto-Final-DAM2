@@ -12,9 +12,12 @@ public class BotonGo : MonoBehaviour
     public void BotonIr()
 
     {
-     
-        SceneManager.LoadScene("Desierto");
-        Application.Quit();
+ 
+
+            SceneManager.LoadScene("Bosque");
+            Application.Quit();
+
+    
     }
 
 }

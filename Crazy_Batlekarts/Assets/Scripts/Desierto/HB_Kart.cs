@@ -100,15 +100,15 @@ public class HB_Kart : MonoBehaviour
         if (colision.tag == "Moneda")
         {
             EarnScore(250);
-            Destroy(colision.gameObject);
 
+           // Destroy(colision.gameObject);
         }
 
         if (colision.tag == "Enemigo")
         {
             TakeDamage(25);
-            Destroy(colision.gameObject);
 
+           // Destroy(colision.gameObject);
         }
 
         if (colision.tag == "Corazon")
@@ -116,10 +116,10 @@ public class HB_Kart : MonoBehaviour
             if (currentHealth<100)
             {
                 HealthDamage();
-                
+               // Destroy(colision.gameObject);
             }
 
-            Destroy(colision.gameObject);
+          
         }
         if (colision.tag == "Vueltas")
         {
@@ -130,6 +130,10 @@ public class HB_Kart : MonoBehaviour
 
 
     }
+
+
+
+
 
 
 

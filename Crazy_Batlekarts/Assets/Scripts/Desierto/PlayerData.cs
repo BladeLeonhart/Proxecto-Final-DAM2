@@ -11,6 +11,7 @@ public class PlayerData{
     public float[] position;
     public float tiempos;
     public int vuelta;
+    public int scoretotal;
 
     public PlayerData(HB_Kart hb_kart)
     {
@@ -19,7 +20,7 @@ public class PlayerData{
         position = new float[3];
         tiempos = hb_kart.tiempo;
         vuelta = hb_kart.vueltas;
-      
+        scoretotal = hb_kart.score;
         
 
 

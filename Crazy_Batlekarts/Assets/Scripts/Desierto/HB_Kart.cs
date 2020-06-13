@@ -19,7 +19,7 @@ public class HB_Kart : MonoBehaviour
     public float tiempo = 0f;
     public int vueltas = 0;
     public int score = 0;
-
+    public static int vueltascontrol;
     public void SavePlayer()
     {
 
@@ -38,6 +38,7 @@ public class HB_Kart : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         vueltas = data.vuelta;
         tiempo = data.tiempos;
+        score = data.scoretotal;
 
        
         Vector3 position;
@@ -56,6 +57,7 @@ public class HB_Kart : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         contador_Segundos.text = " " + tiempo;
         contador_Vueltas.text = " " + vueltas;
+        cant_score.text = " " + score;
 
     }
 
@@ -73,7 +75,7 @@ public class HB_Kart : MonoBehaviour
 
     void EarnScore(int amount) 
     {
-        score = score + amount;
+        score += amount;
     }
 
     void TakeDamage(int damage)
@@ -95,7 +97,7 @@ public class HB_Kart : MonoBehaviour
 
     void OnTriggerEnter(Collider colision)
     {
-        if (colision.tag == "Amigo")
+        if (colision.tag == "Moneda")
         {
             EarnScore(250);
             Destroy(colision.gameObject);
@@ -121,8 +123,9 @@ public class HB_Kart : MonoBehaviour
         }
         if (colision.tag == "Vueltas")
         {
+          
             vueltas++;
-
+            vueltascontrol = vueltas;
         }
 
 

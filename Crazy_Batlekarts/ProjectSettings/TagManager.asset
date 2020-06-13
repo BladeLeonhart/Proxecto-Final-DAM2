@@ -10,6 +10,7 @@ TagManager:
   - Vueltas
   - Amigo
   - Enemigo
+  - Moneda
   layers:
   - Default
   - TransparentFX

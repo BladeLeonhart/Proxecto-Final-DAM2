@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
 
+    public static bool forestActive=false;
+    public static bool desertActive=true;
+
     public void BotonPlay() 
 
-    {
-        SceneManager.LoadScene("EscogerCoche");
+    {      
+        SceneManager.LoadScene("EscogerCoche");            
     }
 
     
@@ -19,6 +22,11 @@ public class MainMenuScript : MonoBehaviour
     {
         Debug.Log("Game QUITED!");
         Application.Quit();
+    }
+
+    public void cambioBooleano() {
+        forestActive = true;
+        desertActive = false;
     }
 
 

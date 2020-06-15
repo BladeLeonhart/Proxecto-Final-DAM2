@@ -6,7 +6,7 @@ public class FalseRespawn : MonoBehaviour
 {
     // Start is called before the first frame    public GameObject effect;
 
-    private float duration = 5f;
+    private float duration = 3f;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coche"))
@@ -20,6 +20,11 @@ public class FalseRespawn : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
+        if (tag=="Moneda") 
+        {
+            gameObject.SetActive(false);
+        }
+
 
        // Instantiate(effect, transform.position, transform.rotation);
 
@@ -27,6 +32,11 @@ public class FalseRespawn : MonoBehaviour
 
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<Collider>().enabled = true;
+
+        if (tag == "Moneda")
+        {
+            gameObject.SetActive(true);
+        }
 
 
     }

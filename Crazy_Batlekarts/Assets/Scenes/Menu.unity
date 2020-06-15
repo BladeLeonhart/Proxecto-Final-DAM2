@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 36821244}
   m_Layer: 0
   m_Name: Forest
-  m_TagString: Untagged
+  m_TagString: Forest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3838,7 +3838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -55}
+  m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 818.2, y: 137.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &194440779
@@ -17969,7 +17969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -225}
+  m_AnchoredPosition: {x: 0, y: -235}
   m_SizeDelta: {x: 340.3, y: 129.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885245192
@@ -18832,7 +18832,7 @@ GameObject:
   - component: {fileID: 929246643}
   m_Layer: 0
   m_Name: Desert
-  m_TagString: Untagged
+  m_TagString: Desert
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28976,7 +28976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 285}
+  m_AnchoredPosition: {x: 0, y: 242}
   m_SizeDelta: {x: 369.6, y: 111.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416252913
@@ -31200,7 +31200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 115}
+  m_AnchoredPosition: {x: 0, y: 89}
   m_SizeDelta: {x: 506.7, y: 134.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544621558
@@ -37372,6 +37372,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 865431281}
         m_MethodName: escenabosque
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 960379239}
+        m_MethodName: cambioBooleano
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

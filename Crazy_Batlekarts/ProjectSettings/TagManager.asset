@@ -11,6 +11,8 @@ TagManager:
   - Amigo
   - Enemigo
   - Moneda
+  - Desert
+  - Forest
   layers:
   - Default
   - TransparentFX

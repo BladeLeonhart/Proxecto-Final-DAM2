@@ -20,6 +20,7 @@ public class HB_Kart : MonoBehaviour
     public int vueltas = 0;
     public int score = 0;
     public static int vueltascontrol;
+    public static float tiempoacum;
     public void SavePlayer()
     {
 
@@ -65,6 +66,7 @@ public class HB_Kart : MonoBehaviour
     void Update()
 	{
         tiempo += Time.deltaTime;
+        tiempoacum = tiempo;
 
         contador_Segundos.text = " " + tiempo.ToString("f0");
         contador_Vueltas.text = " " + vueltas.ToString();

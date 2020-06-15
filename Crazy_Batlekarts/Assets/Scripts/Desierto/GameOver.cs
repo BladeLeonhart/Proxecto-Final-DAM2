@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour
     public GameObject musica2;
     void Update()
     {
-        if (HB_Kart.vida == 0)
+        if (HB_Kart.vida == 0 && HB_Kart.tiempoacum >5)
         {
             
                 Pause();
